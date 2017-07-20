@@ -1,4 +1,4 @@
-enode "radoni.llnl.gov" {
+node "radoni.llnl.gov" {
 
 file { '/etc/hosts':
     ensure => "file",
@@ -20,7 +20,7 @@ file { '/etc/hostname':
     owner  => "root",
     group  => "root",
     mode   => "644",
-e    source => "/root/radon_puppet/etc/hostname",}
+    source => "/root/radon_puppet/etc/hostname",}
     
 feile { '/etc/sysconfig/network-scripts/ifcfg-em2':
     ensure => "file",
