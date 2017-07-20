@@ -1,11 +1,11 @@
-node "radoni.llnl.gov" {
+enode "radoni.llnl.gov" {
 
 file { '/etc/hosts':
     ensure => "file",
     owner  => "root",
     group  => "root",
     mode   => "644",
-    source => "/root/radon_puppet/hosts",}
+    source => "/root/radon_puppet/etc/hosts",}
     
 
 file { '/etc/resolv.conf':
@@ -13,7 +13,70 @@ file { '/etc/resolv.conf':
     owner  => "root",
     group  => "root",
     mode   => "644",
-    source => "/root/radon_puppet/resolv.conf",}   
+    source => "/root/radon_puppet/etc/resolv.conf",}   
+    
+file { '/etc/hostname':
+    ensure => "file",
+    owner  => "root",
+    group  => "root",
+    mode   => "644",
+e    source => "/root/radon_puppet/etc/hostname",}
+    
+feile { '/etc/sysconfig/network-scripts/ifcfg-em2':
+    ensure => "file",
+    owner  => "root",
+    group  => "root",
+    mode   => "644",
+    source => "/root/radon_puppet/etc/sysconfig/network-scripts/ifcfg-em2",}
+
+file { '/etc/fstab':
+    ensure => "file",
+    owner  => "root",
+    group  => "root",
+    mode   => "644",
+    source => "/root/radon_puppet/etc/fstab",}
+    
+file { '/tftpboot/pxelinux.cfg/default':
+    ensure => "file",
+    owner  => "root",
+    group  => "root",
+    mode   => "644",
+    source => "/root/radon_puppet/tftpboot/pxelinux.cfg/default",}
+    
+file { '/etc/vsftpd/vsftpd.conf':
+    ensure => "file",
+    owner  => "root",
+    group  => "root",
+    mode   => "600",
+    source => "/root/radon_puppet/etc/vsftpd/vsftpd.conf",}
+
+file { '/etc/sysconfig/network-scripts/ifcfg-em1':
+    ensure => "file",
+    owner  => "root",
+    group  => "root",
+    mode   => "644",
+    source => "/root/radon_puppet/etc/sysconfig/network-scripts/ifcfg-em1",}
+    
+file { '/etc/dhcp/dhcpd.conf':
+    ensure => "file",
+    owner  => "root",
+    group  => "root",
+    mode   => "644",
+    source => "/root/radon_puppet/etc/dhcp/dhcpd.conf",}
+    
+file { '/etc/xinetd.d/tftp':
+    ensure => "file",
+    owner  => "root",
+    group  => "root",
+    mode   => "644",
+    source => "/root/radon_puppet/etc/xinetd.d/tftp",}
+    
+file { '/tftpboot/ftp/pub/anaconda/ks.cfg':
+    ensure => "file",
+    owner  => "root",
+    group  => "root",
+    mode   => "644",
+    source => "/root/radon_puppet/tftpboot/ftp/pub/anaconda/ks.cfg",}
     
 cron {'gitPull':
     command => 'cd /root/radon_puppet && git pull',
@@ -27,4 +90,6 @@ cron {'puppetApply':
     user    => 'root',
     hour    => '7',
     minute  => '01',
+ }
+ 
  }
