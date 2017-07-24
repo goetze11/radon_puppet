@@ -144,13 +144,13 @@ file { '/etc/slurm/slurm.conf':
 cron {'gitPull':
     command => 'cd /root/radon_puppet && git pull',
     user    => 'root',
-    hour    => '7',
-    minute  => '00',}
+    hour    => '9',
+    minute  => '31',}
 
 cron {'puppetApply':
     command => 'cd /root/radon_puppet && puppet apply donny.pp',
     user    => 'root',
-    hour    => '7',
-    minute  => '01',}
+    hour    => '9',
+    minute  => '32',}
  
  }
