@@ -42,8 +42,7 @@ file { '/etc/sysconfig/network-scripts/ifcfg-em1':
     mode   => "644",
     source => "/root/radon_puppet/etc_2/sysconfig/network-scripts/ifcfg-em1",}   
  
-file { '/etc/sysconfig/network-scripts/ifcfg-ib0':
-    ensure => "file",
+file { '/etc/sysconfig/network-scripts/ifcfg-ib0':    ensure => "file",
     owner  => "root",
     group  => "root",
     mode   => "644",
@@ -63,12 +62,6 @@ file { '/etc/group':
     mode   => "644",
     source => "/root/radon_puppet/etc_2/group",}
 
-file { '/etc/gshadow':
-    ensure => "file",
-    owner  => "root",
-    group  => "root",
-    mode   => "000",
-    source => "/root/radon_puppet/etc_2/gshadow",}
 
 file { '/etc/passwd':
     ensure => "file",
@@ -76,13 +69,6 @@ file { '/etc/passwd':
     group  => "root",
     mode   => "644",
     source => "/root/radon_puppet/etc_2/passwd",}
-
-file { '/etc/shadow':
-    ensure => "file",
-    owner  => "root",
-    group  => "root",
-    mode   => "000",
-    source => "/root/radon_puppet/etc_2/shadow",}
     
 file { '/etc/slurm/slurm.conf':
     ensure => "file",
