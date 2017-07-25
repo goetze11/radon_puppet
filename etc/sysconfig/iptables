@@ -1,6 +1,0 @@
-# sample configuration for iptables service
-# you can edit this manually or use system-config-firewall
-# please do not ask us to add additional ports/services to this default configuration
-*nat
--A POSTROUTING -s 192.168.94.0/19 -o em2 -j SNAT --to-source 192.168.59.4
-COMMIT
