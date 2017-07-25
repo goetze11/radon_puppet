@@ -3,8 +3,6 @@ folderNum=5
 mkdir ~/radon_puppet/etc_$folderNum/sysconfig
 mkdir ~/radon_puppet/etc_$folderNum/sysconfig/network-scripts
 cp /etc/fstab ~/radon_puppet/etc_$folderNum
-cp /etc/gshadow ~/radon_puppet/etc_$folderNum
-cp /etc/shadow ~/radon_puppet/etc_$folderNum
 cp /etc/group ~/radon_puppet/etc_$folderNum
 cp /etc/passwd ~/radon_puppet/etc_$folderNum
 cp /etc/sysconfig/network-scripts/ifcfg-ib0 ~/radon_puppet/etc_$folderNum/sysconfig/network-scripts
