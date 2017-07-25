@@ -1,5 +1,5 @@
 #!/bin/bash
-folderNum=8
+folderNum=9
 mkdir ~/radon_puppet/etc_$folderNum/sysconfig
 mkdir ~/radon_puppet/etc_$folderNum/sysconfig/network-scripts
 cp /etc/fstab ~/radon_puppet/etc_$folderNum
