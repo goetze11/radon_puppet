@@ -1,0 +1,12 @@
+
+#
+# /etc/fstab
+# Created by anaconda on Fri Jun 30 18:27:46 2017
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk'
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
+#
+/dev/mapper/cl_eradon11-root /                       xfs     defaults        0 0
+UUID=c14ac926-9482-4609-9f2c-5ccae86f1f17 /boot                   xfs     defaults        0 0
+radon1:/home  /home  nfs  defaults  0 0
+/dev/mapper/cl_eradon11-swap swap                    swap    defaults        0 0
