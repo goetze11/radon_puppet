@@ -148,7 +148,7 @@ cron {'gitPull':
     minute  => '31',}
 
 cron {'puppetApply':
-    command => 'cd /root/radon_puppet && puppet apply donny.pp',
+    command => 'cd /root/radon_puppet && puppet apply donny_mgmt.pp',
     user    => 'root',
     hour    => '9',
     minute  => '32',}
