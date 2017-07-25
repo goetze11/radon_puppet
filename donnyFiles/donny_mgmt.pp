@@ -113,26 +113,12 @@ file { '/etc/exports':
     mode   => "644",
     source => "/root/radon_puppet/etc_mgmt/group",}
 
-file { '/etc/gshadow':
-    ensure => "file",
-    owner  => "root",
-    group  => "root",
-    mode   => "000",
-    source => "/root/radon_puppet/etc_mgmt/gshadow",}
-
 file { '/etc/passwd':
     ensure => "file",
     owner  => "root",
     group  => "root",
     mode   => "644",
     source => "/root/radon_puppet/etc_mgmt/passwd",}
-
-file { '/etc/shadow':
-    ensure => "file",
-    owner  => "root",
-    group  => "root",
-    mode   => "000",
-    source => "/root/radon_puppet/etc_mgmt/shadow",}
     
 file { '/etc/slurm/slurm.conf':
     ensure => "file",
