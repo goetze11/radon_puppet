@@ -1,0 +1,25 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+192.168.59.4 radoni
+192.168.94.1 eradoni e1
+192.168.94.2 eradon2 e2
+192.168.94.3 eradon3 e3
+192.168.94.4 eradon4 e4
+192.168.94.5 eradon5 e5
+192.168.94.6 eradon6 e6
+192.168.94.7 eradon7 e7
+192.168.94.8 eradon8 e8
+192.168.94.9 eradon9 e9
+192.168.94.10 eradon10 e10
+192.168.94.11 eradon11 e11
+192.168.126.1 radon1 h1
+192.168.126.2 radon2 h2
+192.168.126.3 radon3 h3
+192.168.126.4 radon4 h4
+192.168.126.5 radon5 h5
+192.168.126.6 radon6 h6
+192.168.126.7 radon7 h7
+192.168.126.8 radon8 h8
+192.168.126.9 radon9 h9
+192.168.126.10 radon10 h10
+192.168.126.11 radon11 h11
