@@ -63,12 +63,6 @@ file { '/etc/group':
     mode   => "644",
     source => "/root/radon_puppet/etc_3/group",}
 
-file { '/etc/gshadow':
-    ensure => "file",
-    owner  => "root",
-    group  => "root",
-    mode   => "000",
-    source => "/root/radon_puppet/etc_3/gshadow",}
 
 file { '/etc/passwd':
     ensure => "file",
@@ -76,13 +70,6 @@ file { '/etc/passwd':
     group  => "root",
     mode   => "644",
     source => "/root/radon_puppet/etc_3/passwd",}
-
-file { '/etc/shadow':
-    ensure => "file",
-    owner  => "root",
-    group  => "root",
-    mode   => "000",
-    source => "/root/radon_puppet/etc_3/shadow",}
     
 file { '/etc/slurm/slurm.conf':
     ensure => "file",
