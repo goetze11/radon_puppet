@@ -61,7 +61,7 @@ file { '/etc/group':
     owner  => "root",
     group  => "root",
     mode   => "644",
-    source => "/root/radon_puppet/etc_2/group",}
+    source => "/root/radon_puppet/etc_3/group",}
 
 file { '/etc/gshadow':
     ensure => "file",

@@ -40,7 +40,6 @@ dhcpd:x:177:
 ntp:x:38:
 elk:x:1000:
 logstash:x:995:
-elasticsearch:x:994:
 kibana:x:993:
 wan5:x:1001:
 gassen1:x:1002:
